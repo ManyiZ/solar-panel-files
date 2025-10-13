@@ -127,7 +127,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:XTE-SF"
+		(symbol "Device:IXOLAR"
 			(pin_numbers
 				(hide yes)
 			)
@@ -147,7 +147,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "XTE-SF"
+			(property "Value" "Solar_Cell"
 				(at 2.54 0 0)
 				(effects
 					(font
@@ -156,7 +156,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "solar_cells:xte-sf"
+			(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
 				(at 0 1.524 90)
 				(effects
 					(font
@@ -165,7 +165,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "kicad-embed://XTE-SF Data Sheet _07.27.22.pdf"
+			(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
 				(at 0 1.524 90)
 				(effects
 					(font
@@ -192,7 +192,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "XTE-SF_0_1"
+			(symbol "IXOLAR_0_1"
 				(polyline
 					(pts
 						(xy -2.032 3.048) (xy -2.032 2.286) (xy -2.794 2.286)
@@ -312,7 +312,7 @@
 					)
 				)
 			)
-			(symbol "XTE-SF_1_1"
+			(symbol "IXOLAR_1_1"
 				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
@@ -335,6 +335,173 @@
 					(at 0 -2.54 90)
 					(length 2.54)
 					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:1N5400"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N5400"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88516/1n5400.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "50V 3A General Purpose Rectifier Diode, DO-201AD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?201AD*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N5400_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N5400_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -555,9 +722,27 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 193.04 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d6d8b07-42da-45e0-be4e-5be2027bbbf4")
+	)
+	(junction
+		(at 193.04 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6e98e6d-399b-4069-ba36-224d63067b40")
+	)
+	(junction
+		(at 193.04 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3729519-aba5-4f72-af7d-12a6f0e306c2")
+	)
 	(wire
 		(pts
-			(xy 128.27 55.88) (xy 133.35 55.88)
+			(xy 220.98 29.21) (xy 226.06 29.21)
 		)
 		(stroke
 			(width 0)
@@ -567,7 +752,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 55.88) (xy 171.45 55.88)
+			(xy 193.04 43.18) (xy 193.04 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08d7a232-f312-444c-ab5b-a117a75033ec")
+	)
+	(wire
+		(pts
+			(xy 208.28 43.18) (xy 213.36 43.18)
 		)
 		(stroke
 			(width 0)
@@ -577,17 +772,57 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 55.88) (xy 158.75 55.88)
+			(xy 246.38 71.12) (xy 251.46 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1a83d46d-0ca1-4dd6-a640-a14e9b00323a")
+		(uuid "23795e1e-29bd-4574-8c24-2171276035d5")
 	)
 	(wire
 		(pts
-			(xy 204.47 55.88) (xy 209.55 55.88)
+			(xy 193.04 43.18) (xy 200.66 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2caa9fee-d73f-48ad-a4e3-c1d7615270aa")
+	)
+	(wire
+		(pts
+			(xy 200.66 29.21) (xy 193.04 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3442393b-e609-415d-b75b-5af77f051781")
+	)
+	(wire
+		(pts
+			(xy 172.72 49.53) (xy 179.07 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "425a7932-461b-4428-ab0d-814d2ae86e33")
+	)
+	(wire
+		(pts
+			(xy 208.28 57.15) (xy 213.36 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f55d298-b1a9-4818-b546-07443feee613")
+	)
+	(wire
+		(pts
+			(xy 246.38 43.18) (xy 251.46 43.18)
 		)
 		(stroke
 			(width 0)
@@ -597,17 +832,37 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 55.88) (xy 107.95 55.88)
+			(xy 193.04 29.21) (xy 193.04 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86c6dc2b-0073-47e2-b0af-980d7b45cc23")
+		(uuid "5c47f4ed-de04-4fcd-b0a6-c12d9c1a6e47")
 	)
 	(wire
 		(pts
-			(xy 179.07 55.88) (xy 184.15 55.88)
+			(xy 193.04 57.15) (xy 193.04 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65bae760-2f40-46fc-8dc0-a3ac877cdb67")
+	)
+	(wire
+		(pts
+			(xy 186.69 49.53) (xy 193.04 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fe1125a-6e67-41da-9680-6e8457e5ac49")
+	)
+	(wire
+		(pts
+			(xy 220.98 43.18) (xy 226.06 43.18)
 		)
 		(stroke
 			(width 0)
@@ -617,7 +872,27 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 55.88) (xy 146.05 55.88)
+			(xy 246.38 29.21) (xy 251.46 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96fdb4d4-55a2-4ed0-9a1d-92dbff839d27")
+	)
+	(wire
+		(pts
+			(xy 193.04 49.53) (xy 193.04 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bfe6649-01c0-491d-a03b-e60a5d2225a3")
+	)
+	(wire
+		(pts
+			(xy 233.68 29.21) (xy 238.76 29.21)
 		)
 		(stroke
 			(width 0)
@@ -627,7 +902,17 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 46.99) (xy 49.53 53.34)
+			(xy 233.68 57.15) (xy 238.76 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8033be1-d6d5-4021-8173-948e0cc53409")
+	)
+	(wire
+		(pts
+			(xy 26.67 27.94) (xy 26.67 34.29)
 		)
 		(stroke
 			(width 0)
@@ -637,7 +922,17 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 55.88) (xy 120.65 55.88)
+			(xy 208.28 71.12) (xy 213.36 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afe44218-c238-490b-ac30-b634c244fae3")
+	)
+	(wire
+		(pts
+			(xy 208.28 29.21) (xy 213.36 29.21)
 		)
 		(stroke
 			(width 0)
@@ -647,7 +942,37 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 55.88) (xy 196.85 55.88)
+			(xy 220.98 57.15) (xy 226.06 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be29e7c4-cf21-4118-896e-fcd95ef6a947")
+	)
+	(wire
+		(pts
+			(xy 193.04 57.15) (xy 200.66 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d8ec26-b10f-4e1b-976b-10234192a64c")
+	)
+	(wire
+		(pts
+			(xy 193.04 71.12) (xy 200.66 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d6ded4-182c-4535-8a98-02847d058bb8")
+	)
+	(wire
+		(pts
+			(xy 233.68 43.18) (xy 238.76 43.18)
 		)
 		(stroke
 			(width 0)
@@ -655,34 +980,64 @@
 		)
 		(uuid "d94e1f4d-716d-4d66-9209-2f239b20fd63")
 	)
+	(wire
+		(pts
+			(xy 233.68 71.12) (xy 238.76 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e17aabc8-6cfb-42fc-bd69-aec2e279f517")
+	)
+	(wire
+		(pts
+			(xy 220.98 71.12) (xy 226.06 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e83595f4-5afc-42ef-8e1c-e795cdd85f6d")
+	)
+	(wire
+		(pts
+			(xy 246.38 57.15) (xy 251.46 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9584c36-fda2-4e33-9c4b-7922f1f07667")
+	)
 	(symbol
-		(lib_id "Device:XTE-SF")
-		(at 176.53 55.88 90)
+		(lib_id "Device:IXOLAR")
+		(at 218.44 43.18 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2042eab3-f99c-48c4-8ffe-fc00347f38e2")
+		(uuid "2885fa1e-756a-4401-9c7d-07d67cbe6b8b")
 		(property "Reference" "SC6"
-			(at 174.371 49.53 90)
+			(at 216.281 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "XTE-SF"
-			(at 174.371 52.07 90)
+		(property "Value" "Solar_Cell"
+			(at 216.281 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "solar_cells:xte-sf"
-			(at 175.006 55.88 90)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 216.916 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -690,8 +1045,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "kicad-embed://XTE-SF Data Sheet _07.27.22.pdf"
-			(at 175.006 55.88 90)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 216.916 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -700,7 +1055,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 176.53 55.88 0)
+			(at 218.44 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -708,14 +1063,14 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "07680c33-438f-4353-ba6c-9ba8bedf36b5")
-		)
 		(pin "1"
-			(uuid "0d239b88-bee8-4a0a-a18e-6a41554ad643")
+			(uuid "9f7a9baf-2ef2-481b-ae58-e034a20c2b26")
+		)
+		(pin "2"
+			(uuid "87a6f886-d949-4118-afa7-b7eadf0dc385")
 		)
 		(instances
-			(project "spectrolab_4x7_design"
+			(project "non-deployables_XTE-SF"
 				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
 					(reference "SC6")
 					(unit 1)
@@ -724,85 +1079,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:XTE-SF")
-		(at 163.83 55.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "293f9b8a-52e2-4a81-b7ac-a570f06bd8de")
-		(property "Reference" "SC5"
-			(at 161.671 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XTE-SF"
-			(at 161.671 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "solar_cells:xte-sf"
-			(at 162.306 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "kicad-embed://XTE-SF Data Sheet _07.27.22.pdf"
-			(at 162.306 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single solar cell"
-			(at 163.83 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "36168ad2-60f9-42e6-b078-6907606f887a")
-		)
-		(pin "1"
-			(uuid "ce1fcac0-9755-49c7-b34e-52f67d5e64ba")
-		)
-		(instances
-			(project "spectrolab_4x7_design"
-				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
-					(reference "SC5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 209.55 55.88 90)
+		(at 251.46 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3a0a7083-c019-4752-803c-0c5747b6638a")
-		(property "Reference" "#PWR02"
-			(at 215.9 55.88 0)
+		(uuid "2d67c8f9-e300-4ac2-8214-54ef8e915da7")
+		(property "Reference" "#PWR03"
+			(at 257.81 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -811,7 +1098,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 213.36 55.8799 90)
+			(at 255.27 29.2099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -820,7 +1107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 55.88 0)
+			(at 251.46 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -829,7 +1116,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 55.88 0)
+			(at 251.46 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -838,7 +1125,142 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 209.55 55.88 0)
+			(at 251.46 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bb1dbe3-4b39-408a-8b86-80fdcbc52251")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 205.74 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3751504c-0b71-4166-9076-cba5d991df19")
+		(property "Reference" "SC9"
+			(at 203.581 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 203.581 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 204.216 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 204.216 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 205.74 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4428cfc-c22b-45c4-a395-a8df1d7b2338")
+		)
+		(pin "2"
+			(uuid "a32fe7c2-c42c-4a60-a3fb-09e6a645c560")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 251.46 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a0a7083-c019-4752-803c-0c5747b6638a")
+		(property "Reference" "#PWR02"
+			(at 257.81 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 255.27 43.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -860,7 +1282,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 90.17 55.88 0)
+		(at 167.64 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -869,7 +1291,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e6cbe09-c3e0-4a80-a9ad-6331e809ecb5")
 		(property "Reference" "J1"
-			(at 90.805 50.8 0)
+			(at 168.275 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -877,7 +1299,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01_Pin"
-			(at 90.805 53.34 0)
+			(at 168.275 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -885,7 +1307,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
-			(at 90.17 55.88 0)
+			(at 167.64 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -894,7 +1316,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 90.17 55.88 0)
+			(at 167.64 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -903,7 +1325,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 90.17 55.88 0)
+			(at 167.64 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -924,33 +1346,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:XTE-SF")
-		(at 138.43 55.88 90)
+		(lib_id "Device:IXOLAR")
+		(at 243.84 43.18 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "424151c2-3797-453f-b1b1-d5c2fee3d9fa")
-		(property "Reference" "SC3"
-			(at 136.271 49.53 90)
+		(uuid "406938f1-5e9b-40dc-9cac-38358dea4dff")
+		(property "Reference" "SC8"
+			(at 241.681 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "XTE-SF"
-			(at 136.271 52.07 90)
+		(property "Value" "Solar_Cell"
+			(at 241.681 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "solar_cells:xte-sf"
-			(at 136.906 55.88 90)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 242.316 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -958,8 +1380,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "kicad-embed://XTE-SF Data Sheet _07.27.22.pdf"
-			(at 136.906 55.88 90)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 242.316 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -968,7 +1390,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 138.43 55.88 0)
+			(at 243.84 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -976,16 +1398,16 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "5bcc0ccc-a006-4a63-b5df-fc3d7e7c7f40")
-		)
 		(pin "1"
-			(uuid "39a9cb65-e1a5-4b83-a35f-715fcc27aa84")
+			(uuid "9e89b166-51bf-41dc-9343-5ecc0bc221e4")
+		)
+		(pin "2"
+			(uuid "ec505ce0-7cae-4853-9a51-dbe8a5588482")
 		)
 		(instances
-			(project "spectrolab_4x7_design"
+			(project "non-deployables_XTE-SF"
 				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
-					(reference "SC3")
+					(reference "SC8")
 					(unit 1)
 				)
 			)
@@ -993,7 +1415,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 53.34 0)
+		(at 26.67 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1002,7 +1424,7 @@
 		(fields_autoplaced yes)
 		(uuid "4ae07c1d-f1ea-4d1f-9e45-c66ecfda0bc6")
 		(property "Reference" "#PWR01"
-			(at 49.53 59.69 0)
+			(at 26.67 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1011,7 +1433,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.53 58.42 0)
+			(at 26.67 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1019,7 +1441,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 53.34 0)
+			(at 26.67 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1028,7 +1450,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 53.34 0)
+			(at 26.67 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1037,7 +1459,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 49.53 53.34 0)
+			(at 26.67 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1058,33 +1480,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:XTE-SF")
-		(at 151.13 55.88 90)
+		(lib_id "Device:IXOLAR")
+		(at 243.84 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "606885bd-da1b-4e31-9427-384087b628e7")
-		(property "Reference" "SC4"
-			(at 148.971 49.53 90)
+		(uuid "4f37d603-ea7b-4e7f-982e-04efc18a26ce")
+		(property "Reference" "SC16"
+			(at 241.681 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "XTE-SF"
-			(at 148.971 52.07 90)
+		(property "Value" "Solar_Cell"
+			(at 241.681 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "solar_cells:xte-sf"
-			(at 149.606 55.88 90)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 242.316 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1092,8 +1514,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "kicad-embed://XTE-SF Data Sheet _07.27.22.pdf"
-			(at 149.606 55.88 90)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 242.316 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1102,7 +1524,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 151.13 55.88 0)
+			(at 243.84 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1110,14 +1532,82 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "e97724dc-d4f7-4204-a387-d153e53414e2")
-		)
 		(pin "1"
-			(uuid "d8c21365-82d3-4c89-8326-464c3919e661")
+			(uuid "721328f1-0164-44ad-8525-90f1e12e070b")
+		)
+		(pin "2"
+			(uuid "ed8ae021-3f07-4e76-a01b-ba3e3ee78723")
 		)
 		(instances
-			(project "spectrolab_4x7_design"
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 243.84 29.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58c970b4-83c4-4367-9c25-8d37dad6120a")
+		(property "Reference" "SC4"
+			(at 241.681 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 241.681 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 242.316 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 242.316 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 243.84 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6d02890-b8b0-4f29-8b23-e4f9bbfdd9d7")
+		)
+		(pin "2"
+			(uuid "d97c44f1-60c6-40f5-89c0-9a3c5a1969dd")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
 				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
 					(reference "SC4")
 					(unit 1)
@@ -1126,33 +1616,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:XTE-SF")
-		(at 125.73 55.88 90)
+		(lib_id "power:GND")
+		(at 251.46 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7f49a025-d57a-4668-ac10-608dd4d353a7")
-		(property "Reference" "SC2"
-			(at 123.571 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XTE-SF"
-			(at 123.571 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "solar_cells:xte-sf"
-			(at 124.206 55.88 90)
+		(uuid "63fbeb50-068d-45d0-a461-ce7ea91d634c")
+		(property "Reference" "#PWR05"
+			(at 257.81 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1160,8 +1634,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "kicad-embed://XTE-SF Data Sheet _07.27.22.pdf"
-			(at 124.206 55.88 90)
+		(property "Value" "GND"
+			(at 255.27 71.1199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1169,8 +1652,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single solar cell"
-			(at 125.73 55.88 0)
+		(property "Datasheet" ""
+			(at 251.46 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1178,49 +1661,55 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "836a858f-9ef2-4194-a86d-ce67d3c563cd")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "04af264d-8a0e-42b2-836f-a57602eec6ea")
+			(uuid "39ba404c-c0a8-42b2-94eb-8abe3e49366d")
 		)
 		(instances
-			(project "spectrolab_4x7_design"
+			(project "non-deployables_XTE-SF"
 				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
-					(reference "SC2")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:XTE-SF")
-		(at 113.03 55.88 90)
+		(lib_id "Device:IXOLAR")
+		(at 231.14 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "874b8f0f-71e9-4bef-8e30-303517f3401a")
-		(property "Reference" "SC1"
-			(at 110.871 49.53 90)
+		(uuid "68484265-0ee7-4b55-93a7-acc36797421d")
+		(property "Reference" "SC14"
+			(at 228.981 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "XTE-SF"
-			(at 110.871 52.07 90)
+		(property "Value" "Solar_Cell"
+			(at 228.981 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "solar_cells:xte-sf"
-			(at 111.506 55.88 90)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 229.616 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1228,8 +1717,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "kicad-embed://XTE-SF Data Sheet _07.27.22.pdf"
-			(at 111.506 55.88 90)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 229.616 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1238,7 +1727,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 113.03 55.88 0)
+			(at 231.14 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1246,11 +1735,147 @@
 				(hide yes)
 			)
 		)
+		(pin "1"
+			(uuid "2b334883-6642-4933-8f05-823c771541f4")
+		)
 		(pin "2"
-			(uuid "068b228c-3dd6-47e5-b918-2d46691b5ff0")
+			(uuid "29d80f38-8089-4a30-ba30-1dc0e9b5a2b9")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 231.14 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c4029a0-c610-42c5-b766-4ac1d80026f6")
+		(property "Reference" "SC13"
+			(at 228.981 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 228.981 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 229.616 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 229.616 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 231.14 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "9e6bae99-3dd3-4cf7-a865-ce1b82d80550")
+			(uuid "4f65dc4d-ed28-4b65-bd86-5dea1dad4850")
+		)
+		(pin "2"
+			(uuid "a4b590cb-c4d3-4e44-8a9e-a56e51201dc1")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 205.74 29.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81458ea2-9df0-4d83-8190-35a2bb5ef950")
+		(property "Reference" "SC1"
+			(at 203.581 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 203.581 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 204.216 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 204.216 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 205.74 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5645bd2-e05e-48a0-af8b-d2fe27072b92")
+		)
+		(pin "2"
+			(uuid "1511ad5a-cbfb-4591-924a-11aafc932cce")
 		)
 		(instances
 			(project ""
@@ -1262,33 +1887,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:XTE-SF")
-		(at 201.93 55.88 90)
+		(lib_id "Device:IXOLAR")
+		(at 218.44 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ab43061e-4f85-48f5-aedf-aa16d0191fa6")
-		(property "Reference" "SC8"
-			(at 199.771 49.53 90)
+		(uuid "81a651ea-3ca9-4fc7-99da-6fcf4bb1c181")
+		(property "Reference" "SC12"
+			(at 216.281 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "XTE-SF"
-			(at 199.771 52.07 90)
+		(property "Value" "Solar_Cell"
+			(at 216.281 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "solar_cells:xte-sf"
-			(at 200.406 55.88 90)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 216.916 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1296,8 +1921,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "kicad-embed://XTE-SF Data Sheet _07.27.22.pdf"
-			(at 200.406 55.88 90)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 216.916 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1306,7 +1931,161 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 201.93 55.88 0)
+			(at 218.44 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f7f1aa0-6fa8-4f2f-8df2-4f3da02ebdcb")
+		)
+		(pin "2"
+			(uuid "3b281d6b-efa2-4ed3-a622-5690fe376cb7")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 231.14 29.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82133738-639b-40e1-986c-db7dfb42f271")
+		(property "Reference" "SC3"
+			(at 228.981 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 228.981 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 229.616 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 229.616 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 231.14 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38769378-b4b0-4784-83bb-172863f565b2")
+		)
+		(pin "2"
+			(uuid "ddd136bd-72d2-492c-a5c6-198e62c0cfb5")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5400")
+		(at 182.88 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96a406ec-4678-4e65-9388-2e027ad2aff8")
+		(property "Reference" "D1"
+			(at 182.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5400"
+			(at 182.88 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+			(at 182.88 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88516/1n5400.pdf"
+			(at 182.88 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V 3A General Purpose Rectifier Diode, DO-201AD"
+			(at 182.88 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 182.88 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1315,15 +2094,83 @@
 			)
 		)
 		(pin "2"
-			(uuid "5d46930f-1dd7-4c84-aea9-a078686b5d9f")
+			(uuid "d0719c9c-9523-494c-85fa-c7801b4e51e0")
 		)
 		(pin "1"
-			(uuid "be8eaa28-20b6-499f-9433-2c1998e697ac")
+			(uuid "89df0598-03d3-4691-bca3-bc3cddff6da8")
 		)
 		(instances
-			(project "spectrolab_4x7_design"
+			(project ""
 				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
-					(reference "SC8")
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 243.84 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a59a73f2-4919-429d-8347-ad3946bb7949")
+		(property "Reference" "SC15"
+			(at 241.681 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 241.681 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 242.316 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 242.316 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 243.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed567e33-8a16-4a7c-8b26-bf77fba70f86")
+		)
+		(pin "2"
+			(uuid "710f7af7-2383-4e9f-9550-6e80cc7f49af")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC15")
 					(unit 1)
 				)
 			)
@@ -1331,7 +2178,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 49.53 46.99 0)
+		(at 26.67 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1340,7 +2187,7 @@
 		(fields_autoplaced yes)
 		(uuid "b37d52ee-03b8-4fc3-ba33-d4b62dc2d4bf")
 		(property "Reference" "#FLG01"
-			(at 49.53 45.085 0)
+			(at 26.67 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1349,7 +2196,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 49.53 41.91 0)
+			(at 26.67 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1357,7 +2204,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 46.99 0)
+			(at 26.67 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1366,7 +2213,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 46.99 0)
+			(at 26.67 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1375,7 +2222,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 49.53 46.99 0)
+			(at 26.67 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1396,33 +2243,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:XTE-SF")
-		(at 189.23 55.88 90)
+		(lib_id "power:GND")
+		(at 251.46 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cb4b25d7-0c47-450c-816f-b229ab8fd376")
-		(property "Reference" "SC7"
-			(at 187.071 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XTE-SF"
-			(at 187.071 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "solar_cells:xte-sf"
-			(at 187.706 55.88 90)
+		(uuid "c5bad2b2-6c98-4e3e-8c26-2b73ddf9e582")
+		(property "Reference" "#PWR04"
+			(at 257.81 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1430,8 +2261,91 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "kicad-embed://XTE-SF Data Sheet _07.27.22.pdf"
-			(at 187.706 55.88 90)
+		(property "Value" "GND"
+			(at 255.27 57.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "56092ab9-f433-4508-9461-a7a42bcfc760")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 205.74 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d592038c-3836-4794-8af9-fc7fa3c219a3")
+		(property "Reference" "SC10"
+			(at 203.581 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 203.581 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 204.216 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 204.216 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1440,7 +2354,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 189.23 55.88 0)
+			(at 205.74 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1448,16 +2362,288 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "6870bb4d-0a9a-4109-aead-4ff6b68b72f3")
-		)
 		(pin "1"
-			(uuid "bacec697-d532-4f03-8d1b-ba9ed8b3578a")
+			(uuid "342d8e40-b274-4a0a-b613-31a5110d759e")
+		)
+		(pin "2"
+			(uuid "0b8bb807-f24d-4706-b80b-bdb0b7393cd7")
 		)
 		(instances
-			(project "spectrolab_4x7_design"
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 218.44 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5e4acae-6387-41b4-aedf-f9dd89b62f4a")
+		(property "Reference" "SC11"
+			(at 216.281 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 216.281 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 216.916 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 216.916 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 218.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd90f808-7950-43eb-8f30-78070dd8ed86")
+		)
+		(pin "2"
+			(uuid "5cc4f7d5-8263-4025-92c6-0c1b097fbcdb")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 205.74 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d60ab5ea-83df-4720-9dbe-33ff2e970b70")
+		(property "Reference" "SC5"
+			(at 203.581 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 203.581 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 204.216 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 204.216 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 205.74 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48e71ef8-7628-4db4-8db6-cb7310cdecfd")
+		)
+		(pin "2"
+			(uuid "0da63270-bf38-4160-8b70-3df405cd64e0")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 231.14 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5da82cb-1f60-4266-93e9-308f5f1b9c55")
+		(property "Reference" "SC7"
+			(at 228.981 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 228.981 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 229.616 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 229.616 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 231.14 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af80a654-cf8d-42bf-becc-cdb02230fdd0")
+		)
+		(pin "2"
+			(uuid "f81f4bc2-50d4-4d09-bba7-187d8ce147b1")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
 				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
 					(reference "SC7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:IXOLAR")
+		(at 218.44 29.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea6b0d29-4f6c-4bcb-a4e8-86606c6c1c36")
+		(property "Reference" "SC2"
+			(at 216.281 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Solar_Cell"
+			(at 216.281 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "solar_cells:XOLAR_SM401K08TF"
+			(at 216.916 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "kicad-embed://SM401K08TF DATA SHEET 202105.pdf"
+			(at 216.916 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single solar cell"
+			(at 218.44 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6f649fd-c18e-4a6a-b4ff-99dc4d58f180")
+		)
+		(pin "2"
+			(uuid "8763fe4e-dc00-49e9-a65f-98fc895671f0")
+		)
+		(instances
+			(project "non-deployables_XTE-SF"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "SC2")
 					(unit 1)
 				)
 			)

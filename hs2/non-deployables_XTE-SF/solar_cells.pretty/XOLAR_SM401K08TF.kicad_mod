@@ -1,4 +1,4 @@
-(footprint "Untitled"
+(footprint "XOLAR_SM401K08TF"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -7,7 +7,7 @@
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "369f7649-c1a2-4cd5-b808-a337e098e378")
+		(uuid "8e5b631c-e1c7-4707-90c2-7a77cafe437c")
 		(effects
 			(font
 				(size 1 1)
@@ -15,11 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "Untitled"
+	(property "Value" "IXOLAR SM401K08TF"
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "1dba19d7-752c-4345-bd68-fa56942b6a48")
+		(uuid "112eb7c4-679d-4dc7-89fe-38a4b500e466")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "67d9eec0-f40b-45fa-b7fc-88fe712be4b3")
+		(uuid "8912de86-1c3d-4305-b16d-7534f5172cfd")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "57dd7ea2-025d-4d12-93bb-ca00998f9f5a")
+		(uuid "313df9dd-afd0-45a9-b6dd-3395013f7f43")
 		(effects
 			(font
 				(size 1 1)
@@ -54,6 +54,17 @@
 		)
 	)
 	(attr smd)
+	(fp_rect
+		(start -45 -20)
+		(end 45 20)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "4ac0dd25-6f66-4eeb-b571-3d745ad221f9")
+	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
@@ -65,6 +76,22 @@
 				(thickness 0.15)
 			)
 		)
+	)
+	(pad "" thru_hole circle
+		(at -35 0)
+		(size 4 4)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e23ac8aa-52d5-4dfc-9de7-0912e8a27033")
+	)
+	(pad "" thru_hole circle
+		(at 35 0)
+		(size 4 4)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c5b6cc34-619d-46e5-8c96-ca4fa73d59fd")
 	)
 	(embedded_fonts no)
 )
