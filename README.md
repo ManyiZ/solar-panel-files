@@ -1,5 +1,5 @@
-# deployable-panel
-Deployable solar array PCB files
+# ABOUT
+Solar panel designs. HS-2 is designed in KiCAD, older designs are imported files from EasyEDA.
 
 ## KiCad Resources
 Download: https://www.kicad.org/download/
