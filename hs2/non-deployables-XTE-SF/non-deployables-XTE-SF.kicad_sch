@@ -577,6 +577,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 38.1) (xy 38.1 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1706ac25-184d-43fc-9b6e-687f935187b1")
+	)
+	(wire
+		(pts
 			(xy 153.67 55.88) (xy 158.75 55.88)
 		)
 		(stroke
@@ -627,7 +637,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 46.99) (xy 49.53 53.34)
+			(xy 25.4 38.1) (xy 25.4 44.45)
 		)
 		(stroke
 			(width 0)
@@ -993,7 +1003,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 53.34 0)
+		(at 25.4 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1002,7 +1012,7 @@
 		(fields_autoplaced yes)
 		(uuid "4ae07c1d-f1ea-4d1f-9e45-c66ecfda0bc6")
 		(property "Reference" "#PWR01"
-			(at 49.53 59.69 0)
+			(at 25.4 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1011,7 +1021,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.53 58.42 0)
+			(at 25.4 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1019,7 +1029,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 53.34 0)
+			(at 25.4 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1028,7 +1038,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 53.34 0)
+			(at 25.4 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1037,7 +1047,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 49.53 53.34 0)
+			(at 25.4 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1052,6 +1062,72 @@
 			(project ""
 				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a8c4907-6385-4060-849f-97814a36fa1b")
+		(property "Reference" "#PWR03"
+			(at 38.1 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e32f0d91-5ebf-4685-b761-24f0187b4193")
+		)
+		(instances
+			(project "spectrolab_4x7_design"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1120,6 +1196,73 @@
 			(project "spectrolab_4x7_design"
 				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
 					(reference "SC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 38.1 33.02 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a8cb804-135f-4a3b-a56e-dc098d384adc")
+		(property "Reference" "GND_J1"
+			(at 39.37 32.3849 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 39.37 34.9249 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
+			(at 38.1 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 38.1 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "113bc948-b665-44ce-aac1-512abaaf5233")
+		)
+		(instances
+			(project "spectrolab_4x7_design"
+				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
+					(reference "GND_J1")
 					(unit 1)
 				)
 			)
@@ -1331,7 +1474,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 49.53 46.99 0)
+		(at 25.4 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1340,7 +1483,7 @@
 		(fields_autoplaced yes)
 		(uuid "b37d52ee-03b8-4fc3-ba33-d4b62dc2d4bf")
 		(property "Reference" "#FLG01"
-			(at 49.53 45.085 0)
+			(at 25.4 36.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1349,7 +1492,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 49.53 41.91 0)
+			(at 25.4 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1357,7 +1500,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 46.99 0)
+			(at 25.4 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1366,7 +1509,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 46.99 0)
+			(at 25.4 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1375,7 +1518,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 49.53 46.99 0)
+			(at 25.4 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
