@@ -577,16 +577,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 38.1) (xy 38.1 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1706ac25-184d-43fc-9b6e-687f935187b1")
-	)
-	(wire
-		(pts
 			(xy 153.67 55.88) (xy 158.75 55.88)
 		)
 		(stroke
@@ -664,6 +654,28 @@
 			(type default)
 		)
 		(uuid "d94e1f4d-716d-4d66-9209-2f239b20fd63")
+	)
+	(global_label "BMS"
+		(shape output)
+		(at 48.26 43.18 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "028b992e-2e24-4860-a109-190abc3a2e64")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.26 36.2639 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:XTE-SF")
@@ -1068,72 +1080,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 38.1 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5a8c4907-6385-4060-849f-97814a36fa1b")
-		(property "Reference" "#PWR03"
-			(at 38.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 38.1 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e32f0d91-5ebf-4685-b761-24f0187b4193")
-		)
-		(instances
-			(project "spectrolab_4x7_design"
-				(path "/dbc43d45-a017-4e42-aa9f-af2b8f794c11"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:XTE-SF")
 		(at 151.13 55.88 90)
 		(unit 1)
@@ -1203,16 +1149,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 38.1 33.02 270)
+		(at 48.26 48.26 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7a8cb804-135f-4a3b-a56e-dc098d384adc")
 		(property "Reference" "GND_J1"
-			(at 39.37 32.3849 90)
+			(at 46.99 48.8951 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1221,7 +1166,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01_Pin"
-			(at 39.37 34.9249 90)
+			(at 46.99 46.3551 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1230,7 +1175,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
-			(at 38.1 33.02 0)
+			(at 48.26 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1239,7 +1184,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 33.02 0)
+			(at 48.26 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1248,7 +1193,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 38.1 33.02 0)
+			(at 48.26 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
